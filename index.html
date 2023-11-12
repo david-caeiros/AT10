@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link rel='stylesheet' href='style.css'>
+  <script src='script.js'></script>
+  <title>Comparador de Números</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Comparador de Números</h1>
+        <form id="number-comparator">
+            <label for="num1">Número 1:</label>
+            <input type="number" id="num1" required>
+
+            <label for="num2">Número 2:</label>
+            <input type="number" id="num2" required>
+
+            <label for="num3">Número 3:</label>
+            <input type="number" id="num3" required>
+
+            <button type="button" onclick="compareNumbers()">Comparar</button>
+        </form>
+
+        <div id="result" class="hidden">
+            <p>Maior número: <span id="max"></span></p>
+            <p>Menor número: <span id="min"></span></p>
+            <p>Números iguais: <span id="equal"></span></p>
+            <p>Todos diferentes? <span id="all-different"></span></p>
+        </div>
+    </div>
+</body>
+</html>
